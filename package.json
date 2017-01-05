@@ -1,0 +1,29 @@
+{
+  "name": "pimatic-ded",
+  "description": "A pimatic plugin to display informations from 'Deutscher Wetter Dienst'",
+  "author": "Florian in der Beek <florian@idbtec.de> (http://idbtec.de)",
+  "main": "dwd",
+  "files": [
+    "dwd.coffee",
+    "dwd-config-schema.coffee",
+    "dwd-device-config-schema.coffee",
+    "app/*"
+  ],
+  "version": "0.1.0",
+  "homepage": "http://idbtec.de/dwd",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fbeek/pimatic-dwd.git"
+  },
+  "configSchema": "dwd-config-schema.coffee",
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "pimatic": "0.9.*"
+  },
+  "engines": {
+    "node": ">=4.5.x",
+    "npm": ">=2.15.x"
+  }
+}
