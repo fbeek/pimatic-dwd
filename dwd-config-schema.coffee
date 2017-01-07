@@ -1,11 +1,13 @@
-# #my-plugin configuration options
-# Declare your config option for your plugin here. 
 module.exports = {
-  title: "my plugin config options"
+  title: "Configruation Options for the pimatic-dwd plugin"
   type: "object"
   properties:
-    option1:
-      description: "Some option"
+    url:
+      description: "URL to the DWD warnings.json file"
       type: "string"
-      default: "foo"
+      default: "http://www.dwd.de/DWD/warnungen/warnapp/json/warnings.json"
+    updateInterval:
+      description: "update interval for the json data in minutes"
+      type: "integer"
+      default: 10
 }
