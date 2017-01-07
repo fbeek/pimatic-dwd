@@ -8,6 +8,6 @@ module.exports = {
       default: "http://www.dwd.de/DWD/warnungen/warnapp/json/warnings.json"
     updateInterval:
       description: "update interval for the json data in minutes"
-      type: "integer"
+      type: "number"
       default: 10
 }
