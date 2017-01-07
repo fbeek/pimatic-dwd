@@ -2,19 +2,22 @@ module.exports = (env) ->
 
   Promise = env.require 'bluebird'
   assert = env.require 'cassert'
-  jsonfile = require 'jsonfile'
+  jsonp = require 'jsonp'
 
   class DwdPlugin extends env.plugins.Plugin
 
     init: (app, @framework, @config) =>
       env.logger.info("Starting DWD Plugin.")
-      env.logger.info("Loading data from : " + @config.url + "every " + @config.updateInterval + "minutes")
+      env.logger.info("Loading data from : " + @config.url + " every " + @config.updateInterval + " minutes")
 
       deviceConfigDef = require("./dwd-device-config-schema")
 
       deviceTypeClasseNames = [
         DwdInfoDisplayDevice
       ]
+
+      jsonp.jsonp @config.url,(err, obj) =>
+        console.dir(obj)
 
       @availableDevices = []
 

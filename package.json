@@ -18,7 +18,7 @@
   },
   "configSchema": "dwd-config-schema.coffee",
   "dependencies": {
-    "jsonfile": "2.4.0"
+    "jsonp": "*"
   },
   "peerDependencies": {
     "pimatic": "0.9.*"
