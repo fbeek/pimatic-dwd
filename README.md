@@ -7,7 +7,7 @@ The informations where only available in german from the DWD so the output is on
 
 At the moment the software is at a development stage so please use it with caution.
 
-The owner of the data and the copyright holder is the ["Deutscher Wetter Dienst"](http://www.dwd.de/)
+The owner of the data and the copyright holder is the ["Deutscher Wetter Dienst"](http://www.dwd.de/).
 
 Copyright Link: 
 
@@ -35,7 +35,7 @@ The Data form the DWD where updated on there servers every 10 minutes.
 Usage
 ---------
 
-The Use of this plugin is quite easy easy. You need to select the nearest zone id from the PDF file or the list below and add this to your device config and select the lowest level of informations you want to show.
+The usage of this plugin is quite easy easy. You need to select the nearest zone id from the PDF file or the list below and add this to your device config and select the lowest level of informations you want to show.
 
 
 Changelog
