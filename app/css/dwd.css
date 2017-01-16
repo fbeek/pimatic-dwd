@@ -1,0 +1,31 @@
+.dwd-info-display table.dwd-info-data-table{
+    width:  100%;
+}
+
+.dwd-info-display .dwd-info-description p, .dwd-info-display .dwd-info-times{
+    white-space: normal;
+    font-size: .75em;
+    font-weight: normal;
+    margin: .6em 0;
+}
+
+.dwd-info-display .dwd-info-times{
+    padding-right: .6em;
+}
+
+.dwd-info-title{
+    margin-top: .6em;
+}
+
+.dwd-info-display-content{
+    max-width: 100%;
+    clear: both;
+}
+.warning-level{
+    color: #888;
+    margin-right: 0.2em;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 9px;
+    display: block;
+}

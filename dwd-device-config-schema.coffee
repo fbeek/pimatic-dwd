@@ -13,13 +13,14 @@ module.exports = {
         type: "string"
         default: ""
       zone:
-        description: "Regional zone to show warnings from"
+        description: "Regional zone to show warnings from (WarnCellId from PDF)"
         type: "string"
         default: ""
       warningLevel:
-        description: "Level of warning to be displayed"
+        description: "Level of warning to be displayed, the plugin will show all messages above this level"
         type: "string"
-        default: ""
+        default: "Minor"
+        enum : ["Minor","Moderate","Severe","Extreme"]
     }
   }
 }

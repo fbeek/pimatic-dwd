@@ -1,7 +1,11 @@
 {
   "name": "pimatic-dwd",
   "description": "A pimatic plugin to display informations from 'Deutscher Wetter Dienst'",
-  "author": "Florian in der Beek <florian@idbtec.de> (http://idbtec.de)",
+  "author": {
+    "name": "Florian in der Beek",
+    "email": "florian@idbtec.de",
+    "url": "http://idbtec.de"
+  },
   "main": "dwd",
   "files": [
     "dwd.coffee",
@@ -18,7 +22,8 @@
   },
   "configSchema": "dwd-config-schema.coffee",
   "dependencies": {
-    "jsonp": "*"
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
   },
   "peerDependencies": {
     "pimatic": "0.9.*"
@@ -26,5 +31,9 @@
   "engines": {
     "node": ">=4.5.x",
     "npm": ">=2.15.x"
-  }
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/fbeek/pimatic-dwd/issues"
+  },
 }

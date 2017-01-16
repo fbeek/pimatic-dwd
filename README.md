@@ -1,7 +1,9 @@
 pimatic-dwd
 =======================
 
-Pimatic plugin to show weather informations form the "Deutscher Wetter Dienst"
+Pimatic plugin to show weather informations form the "Deutscher Wetter Dienst".
+
+The informations where only available in german from the DWD so the output is only in german.
 
 At the moment the software is at a development stage so please use it with caution.
 

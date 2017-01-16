@@ -1,0 +1,43 @@
+<script id="dwd-info-display-device-template" type="text/template">
+  <li class="sortable device no-header dwd-info-display">
+      <label data-bind="text: name" class="" style="padding-right: 10px;"></label><span class="warning-level" data-bind="text: warningLevelLabel"></span>
+    <div class="dwd-info-display-content">
+        <h3>Warnungen</h3>
+        <div data-bind="foreach: jsonDataWarnings">
+            <div class="ui-grid-solo dwd-info-title">
+                <span class="ui-block-a" data-bind="text: headline"></span>
+            </div>
+            <div class="ui-grid-a" >
+                <div class="ui-block-a dwd-info-times" style="width:30%">
+                    Gültig von <span data-bind="text: start"></span> Uhr bis <span data-bind="text: end"></span> Uhr
+                </div>
+                <div class="ui-block-b dwd-info-description" style="width:70%">
+                    <p data-bind="text: description"></p>
+                </div>
+            </div>
+        </div>
+        <div class="ui-grid-solo dwd-info-title" data-bind="if: jsonDataWarnings().length == 0">
+            <span class="ui-block-a">Es liegen zur Zeit keine Warnungen vor.</span>
+        </div>
+        
+        <h3>Vorabinformationen</h3>
+        <div data-bind="foreach: jsonDataNotifications">
+            <div class="ui-grid-solo dwd-info-title">
+                <span class="ui-block-a" data-bind="text: headline"></span>
+            </div>
+            <div class="ui-grid-a" >
+                <div class="ui-block-a dwd-info-times" style="width:30%">
+                    Gültig von <span data-bind="text: start"></span> Uhr bis <span data-bind="text: end"></span> Uhr
+                </div>
+                <div class="ui-block-b dwd-info-description" style="width:70%">
+                    <p data-bind="text: description"></p>
+                </div>
+            </div>
+        </div>
+        <div class="ui-grid-solo dwd-info-title" data-bind="if: jsonDataNotifications().length == 0">
+            <span class="ui-block-a">Es liegen zur Zeit keine Vorabinformationen vor.</span>
+        </div>
+
+    </div>
+  </li>
+</script>
