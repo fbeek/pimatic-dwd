@@ -11,7 +11,8 @@
     "dwd.coffee",
     "dwd-config-schema.coffee",
     "dwd-device-config-schema.coffee",
-    "app/*"
+    "app/*",
+    "doc/*"
   ],
   "version": "0.1.0",
   "homepage": "http://idbtec.de/dwd",
