@@ -28,7 +28,7 @@ Because of the support ending for pimatic 0.8.x, we from now on support only pim
 
 The resolution of the data is NOT on city level but rather on district/county level, because you have to pay the DWD for a finer resolution.
 
-Here you you can find some additional data about the data source: [http://www.dwd.de/DE/wetter/warnungen_aktuell/objekt_einbindung/objekteinbindung.html?nn=508722#doc582840bodyText9](http://www.dwd.de/DE/wetter/warnungen_aktuell/objekt_einbindung/objekteinbindung.html?nn=508722#doc582840bodyText9)
+Here you you can find some additional data about the data source: ["Data object description"](http://www.dwd.de/DE/wetter/warnungen_aktuell/objekt_einbindung/objekteinbindung.html?nn=508722#doc582840bodyText9)
 
 The Data form the DWD where updated on there servers every 10 minutes.
 
@@ -37,11 +37,13 @@ Usage
 
 The usage of this plugin is quite easy easy. You need to select the nearest zone id from the PDF file or the list below and add this to your device config and select the lowest level of informations you want to show.
 
+If you get an error after the first install, please clear your browser cache so that pimatic renders the newest templates.
+
 
 Changelog
 ---------------
 
-Changelog coming soon.
+0.1.0 First working release without Rule support
 
 ToDo
 ---------------
