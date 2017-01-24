@@ -14,7 +14,7 @@
     "app/*",
     "doc/*"
   ],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "http://idbtec.de/dwd",
   "private": false,
   "repository": {
