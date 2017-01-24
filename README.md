@@ -54,6 +54,7 @@ Changelog
 ---------------
 
 0.1.0 First working release without Rule support
+
 0.1.1 updated readme
 
 ToDo
