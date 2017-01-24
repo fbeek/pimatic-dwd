@@ -35,15 +35,26 @@ The Data form the DWD where updated on there servers every 10 minutes.
 Usage
 ---------
 
-The usage of this plugin is quite easy easy. You need to select the nearest zone id from the PDF file or the list below and add this to your device config and select the lowest level of informations you want to show.
+The usage of this plugin is quite easy.
 
-If you get an error after the first install, please clear your browser cache so that pimatic renders the newest templates.
+After you installed the plugin over pimatic please restart pimatic !
+
+After that you add a new device of the type "DwdInfoDisplayDevice" over the device manager in pimatic.
+
+You need to select the nearest zone id from the [PDF](doc/ZoneIds.pdf) file or the list below and add this to your device config and select the lowest level of informations you want to show.
+
+If you get an error after the first install, or the device is not showing up in the backend, please clear your browser cache so that pimatic renders the newest templates !
+
+Here is an example:
+
+![Example configuration](doc/tut01.png)
 
 
 Changelog
 ---------------
 
 0.1.0 First working release without Rule support
+0.1.1 updated readme
 
 ToDo
 ---------------

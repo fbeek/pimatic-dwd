@@ -13,7 +13,7 @@ module.exports = {
         type: "string"
         default: ""
       zone:
-        description: "Regional zone to show warnings from (WarnCellId from PDF)"
+        description: "Regional zone to show warnings from (WarnCellId from PDF under /pimatic-dwd/ZoneIds.pdf or the readme on Github https://github.com/fbeek/pimatic-dwd)"
         type: "string"
         default: ""
       warningLevel:
