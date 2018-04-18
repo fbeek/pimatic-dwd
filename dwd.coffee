@@ -11,7 +11,7 @@ module.exports = (env) ->
 
     init: (@app, @framework, @config) =>
       env.logger.info("Starting DWD Plugin.")
-      env.logger.info("Loading data from : " + @config.url + " every " + @config.updateInterval + " minutes")
+      env.logger.info("Loading data from : " + @config.url + @config.filename + " every " + @config.updateInterval + " minutes")
       
       deviceConfigDef = require("./dwd-device-config-schema")
 
@@ -60,8 +60,9 @@ module.exports = (env) ->
 
       rp(options)
         .then (parsedBody) =>
+          env.logger.debug(parsedBody)
           parsedBody = parsedBody.replace('warnWetter.loadWarnings(','')
-          parsedBody = parsedBody.substring(0, parsedBody.length - 1);
+          parsedBody = parsedBody.substring(0, parsedBody.length - 2)
         .then (JSON.parse)  
         .then (data) =>
           env.logger.debug('Received and parsed new data from DWD')
