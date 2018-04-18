@@ -57,6 +57,8 @@ Changelog
 
 0.1.1 updated readme
 
+0.9.0 updated dataformat in json
+
 ToDo
 ---------------
 

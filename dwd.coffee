@@ -61,7 +61,7 @@ module.exports = (env) ->
       rp(options)
         .then (parsedBody) =>
           parsedBody = parsedBody.replace('warnWetter.loadWarnings(','')
-          parsedBody = parsedBody.substring(0, parsedBody.length - 2);
+          parsedBody = parsedBody.substring(0, parsedBody.length - 1);
         .then (JSON.parse)  
         .then (data) =>
           env.logger.debug('Received and parsed new data from DWD')
